@@ -1,0 +1,80 @@
+.page {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .project-name {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 1em;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list {
+    width: 60%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2BE080;
+  }
+
+  .label {
+    width: 100%;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .meme {
+    display: none;
+    height: 50px;
+  }
+
+  .input {
+    display: none;
+  }
+
+  .input:checked ~ .meme {
+    display: block;
+  }
+
+  .input:hover ~ .meme {
+    display: block;
+  }
+
+  .icon {
+    display: none;
+    width: 1rem;
+  }
+
+  .list:hover .icon {
+    display: block;
+  }
+
+  .list:hover .label {
+    color: #465DFF;
+  }
