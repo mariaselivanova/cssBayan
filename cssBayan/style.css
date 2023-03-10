@@ -28,30 +28,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
 
   .item {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #2BE080;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
   }
 
   .label {
     width: 100%;
     font-weight: 600;
     font-size: 30px;
+    padding: 2rem;
+    cursor: pointer;
+    background-color: #2BE080;
   }
 
-  .label:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
 
   .meme {
     display: none;
-    height: 50px;
+    height: 150px;
   }
 
   .input {
@@ -61,6 +60,11 @@
   .input:checked ~ .meme {
     display: block;
   }
+
+  .input:checked ~ .icon-checked {
+    display: block;
+  }
+
 
   .input:hover ~ .meme {
     display: block;
@@ -77,4 +81,21 @@
 
   .list:hover .label {
     color: #465DFF;
+  }
+
+  .icon-checked {
+    display: none;
+    width: 1rem;
+  }
+
+  .input:hover ~ .icon-checked {
+    display: block;
+  }
+
+  .input:hover ~ .icon {
+    display: none;
+  }
+
+  .input:checked ~ .icon {
+    display: none;
   }
