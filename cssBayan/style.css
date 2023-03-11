@@ -216,3 +216,18 @@
     line-height: 1rem;
   }
 }
+
+.label:active .text {
+  color: darkgray;
+  opacity: 0.8;
+}
+
+.label:active .icon{
+  fill: darkgray;
+  opacity: 0.6;
+}
+
+.label:active .meme{
+  opacity: 0.6;
+}
+
