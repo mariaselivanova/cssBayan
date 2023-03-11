@@ -32,12 +32,12 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  cursor: pointer;
 }
 
 .item {
   width: 100%;
   row-gap: 2rem;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,6 @@
 .label {
   width: 100%;
   padding: 2rem;
-  cursor: pointer;
   background-color: #2BE080;
   border-radius: 3rem;
   display: grid;
@@ -54,6 +53,7 @@
                        "meme meme";
   gap: 1rem;
   box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .text {
@@ -141,6 +141,11 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .list {
+    cursor: auto;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .label {
@@ -148,14 +153,12 @@
   }
 }
 
-
 @media screen and (max-width: 900px) {
   .text {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
 }
-
 
 @media screen and (max-width: 900px) {
   .project-name {
