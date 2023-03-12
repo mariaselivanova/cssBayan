@@ -50,7 +50,7 @@
   border-radius: 3rem;
   display: grid;
   grid-template-areas: "label icon"
-                       "meme meme";
+    "meme meme";
   gap: 1rem;
   box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.08);
   cursor: pointer;
@@ -98,6 +98,19 @@
 }
 
 /* desktop */
+
+@media screen and (min-width: 1400px) {
+  .project-name {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .text {
+    font-size: 1.5rem;
+  }
+}
 
 @media screen and (min-width: 901px) {
   .list:hover .icon {
@@ -228,12 +241,11 @@
   opacity: 0.8;
 }
 
-.label:active .icon{
+.label:active .icon {
   fill: #5A5A5A;
   opacity: 0.6;
 }
 
-.label:active .meme{
+.label:active .meme {
   opacity: 0.6;
 }
-
