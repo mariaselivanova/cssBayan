@@ -147,14 +147,14 @@
 
 /* tablet */
 
-@media screen and (max-width: 900px) {
+@media (hover: none) {
   .input:checked~.icon {
     transform: rotate(180deg);
     opacity: 1;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (hover: none) {
   .icon {
     opacity: 0.4;
   }
