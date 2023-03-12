@@ -112,33 +112,33 @@
   }
 }
 
-@media screen and (min-width: 901px) {
+@media (hover: hover) {
   .list:hover .icon {
     opacity: 0.4;
   }
 }
 
-@media screen and (min-width: 901px) {
+@media (hover: hover) {
   .list:hover .text {
     color: #465DFF;
   }
 }
 
-@media screen and (min-width: 901px) {
+@media (hover: hover){
   .item:hover .meme {
     height: 20rem;
     opacity: 1;
   }
 }
 
-@media screen and (min-width: 901px) {
+@media (hover: hover) {
   .item:hover .icon {
     transform: rotate(180deg);
     opacity: 1;
   }
 }
 
-@media screen and (min-width: 901px) {
+@media (hover: hover) {
   .list:hover .input:checked~.icon {
     transform: rotate(180deg);
     opacity: 1;
@@ -160,13 +160,13 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (hover: none) {
   .list {
     cursor: auto;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (hover: none) {
   .label {
     cursor: auto;
   }
